@@ -4,10 +4,17 @@ import {AiFillEye,AiFillEyeInvisible} from 'react-icons/ai'
 import { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const Login = () => {
 
     const [open,setOpen] = useState(false)
+
+    const { systemTheme, theme } = useTheme();
+
+    const currentTheme = theme === "system" ? systemTheme : theme;
+    const isDark = currentTheme === "dark";
+
 
     const toggle = () =>{
         setOpen(!open)
@@ -15,7 +22,7 @@ const Login = () => {
 
   return (
     <div className="bg-gradient-to-r from-green-400 to-green-900 min-h-screen flex items-center justify-center" >
-        <div className="bg-gray-100 dark:bg-slate-800 flex rounded-2xl shadow-lg max-w-4xl  " >
+        <div className={`flex rounded-2xl shadow-lg max-w-4xl ${isDark ? 'bg-slate-800' : 'bg-gray-100' } `} >
         <section className="md:w-1/2 px-16 py-8 " >
             <h2 className="font-bold text-2xl" >Login</h2>
             <p className="text-sm my-4" >If you are already a member, easily log in</p>
