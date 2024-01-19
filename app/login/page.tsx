@@ -37,7 +37,10 @@ const Login = () => {
             </div>
 
             <button className="bg-white border py-2 w-full rounded-xl mt-5 flex items-center justify-center gap-4ctext-sm hover:scale-105 duration-300 " >
-                <img className="h-6 mr-3" src="google.svg" />
+                <Image 
+                className="h-6 mr-3" 
+                alt="google"
+                src="google.svg" />
                <p className="" >Login with Google</p>
             </button>
 
