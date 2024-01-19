@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Provider } from "./themeProvider"
+// import ThemeSwitch from '@/components/ThemeSwitch'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning >
       <body className="bg-gray-50 dark:bg-slate-800">
         <Provider
-       
         >
         {children}
         </Provider>

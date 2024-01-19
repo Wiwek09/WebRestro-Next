@@ -14,7 +14,7 @@ const Register = () => {
       
     return (
         <div className="bg-gradient-to-r from-gray-400 to-orange-600 min-h-screen flex items-center justify-center" >
-            <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-5xl  " >
+            <div className="bg-gray-100 dark:bg-slate-800 flex rounded-2xl shadow-lg max-w-5xl  " >
             <section className="md:w-1/2 px-16 py-8 " >
                 <h2 className="font-bold text-2xl" >Register</h2>
                 <p className="text-sm my-4" >Create your account easily</p>

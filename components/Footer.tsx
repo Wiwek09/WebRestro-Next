@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='' >
     <div className='flex justify-between sm:pt-96 pt-80 self-center' >
-        <div className='sm:flex items-center hidden sm:display'>
+        <div className='sm:flex items-center space-x-3 hidden sm:display'>
             <Image 
             src='/logo.jpg'
             alt='logo' 
@@ -14,7 +14,7 @@ const Footer = () => {
             height={60}
             width={60}
              />
-            <span>WebRestro</span>
+            <span className='text-[#7dd049]' >WebRestro</span>
         </div>
 
         <div className='grid gap-2 items-center ' >
